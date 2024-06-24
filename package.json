@@ -1,7 +1,7 @@
 {
   "name": "web",
   "version": "0.1.0",
-  "homepage": "https://github.com/jwaguirr/Personal-Website",
+  "homepage": "https://jwaguirre.xyz",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.3",
