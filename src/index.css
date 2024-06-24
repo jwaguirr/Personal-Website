@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.corner-borders::before,
+.corner-borders::after {
+  content: '';
+  position: absolute;
+  width: 10px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+  border: 2px solid black; /* Border thickness and color */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.corner-borders::before {
+  top: -2px; /* Move slightly outside */
+  left: -2px; /* Move slightly outside */
+  border-bottom: none;
+  border-right: none;
 }
+
+.corner-borders::after {
+  top: -2px; /* Move slightly outside */
+  right: -2px; /* Move slightly outside */
+  border-bottom: none;
+  border-left: none;
+}
+
+.corner-borders::before::after,
+.corner-borders::after::before {
+  content: '';
+  position: absolute;
+  width: 10px; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height as needed */
+}
+
+.corner-borders::before::after {
+  bottom: -2px; /* Move slightly outside */
+  left: -2px; /* Move slightly outside */
+  border-top: none;
+  border-right: none;
+}
+
+.corner-borders::after::before {
+  bottom: -2px; /* Move slightly outside */
+  right: -2px; /* Move slightly outside */
+  border-top: none;
+  border-left: none;
+}
+
+/* Dark mode styles */
+.dark .corner-borders::before,
+.dark .corner-borders::after,
+.dark .corner-borders::before::after,
+.dark .corner-borders::after::before {
+  border-color: white; /* Change the border color for dark mode */
+}
+
+
+
+
