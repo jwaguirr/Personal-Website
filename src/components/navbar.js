@@ -29,7 +29,7 @@ export default function NavBar({ className }) {
     // More logic to dictate if the user intended to switch themes or go home. 
     if (active === null && previousActiveState === "Home" && isDarkModeToggled === false) {
         const targetElement = document.getElementById('Home');
-        if (targetElement) {
+        if (targetElement && !isLargeScreen) {
         targetElement.scrollIntoView({ behavior: "smooth" });
         }
     }

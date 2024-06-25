@@ -25,8 +25,8 @@ function Projects() {
                     Room Automation
                 </h2>
                 <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                    When I was in highschool, I decided to automate my room...
-                </p>
+                    I automated my room based on a schedule using Flask, Python, SQL, and various other components.               
+                 </p>
                 </div>
                 <ProjectButton size={"px-12 py-4"} link={links.RoomAutomation}/>
             </WobbleCard>
@@ -39,16 +39,16 @@ function Projects() {
                 </p>
                 <ProjectButton size={"px-6 py-3"} link={links.StockFin}/>
             </WobbleCard>
-            <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 dark:bg-[#142743] min-h-[400px] lg:min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+            <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 dark:bg-[#142743] min-h-[450px] lg:min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
                 <div className="max-w-sm">
                 <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Servery (Current)
                 </h2>
                 <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                    A recipie app that uses ML, Social Network, and much more!
+                    A recipe recommendation app that curates new recipes based on your previous preferences. This app features a social network and much more! (Coming Soon)
                 </p>
                 </div>
-                <ProjectButton size={"px-12 py-6"} text={"Read about me!"} link={links.Servery}/>
+                <ProjectButton size={"px-6 py-3 md:px-12 md:py-6"} text={"Read about me!"} link={links.Servery}/>
             </WobbleCard>
             </div>
         </div>

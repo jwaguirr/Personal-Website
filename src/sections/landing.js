@@ -1,5 +1,4 @@
 import React from 'react'
-import Movie from "../images/RiverMe.mov"
 import Movie2 from "../images/meRiver.gif"
 import { saveAs } from 'file-saver';
 
@@ -7,7 +6,7 @@ function Landing() {
 
   const downloadPDF = () => {
     // Download the pdf
-    const pdfUrl = '../images/Justin-Aguirre-Resume.pdf';
+    const pdfUrl = `${process.env.PUBLIC_URL}/Resume.pdf`;
     const pdfName = 'Justin-Aguirre-Resume.pdf';
     saveAs(pdfUrl, pdfName);
   };
