@@ -3,6 +3,7 @@ import React, { createContext, useEffect, useState } from 'react';
 const DarkModeContext = createContext();
 
 const DarkModeProvider = ({ children }) => {
+  // This context takes the device scheme from the user device, but allows the user to toggle it
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {

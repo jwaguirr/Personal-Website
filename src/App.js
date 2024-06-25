@@ -9,6 +9,7 @@ import Footer from "./sections/footer";
 import Alert from "./components/alert";
 
 function App() {
+  // For error handling function 
   const [showAlert, setShowAlert] = useState(false);
   const [message, setMessage] = useState();
   const [alertType, setAlertType] = useState("");

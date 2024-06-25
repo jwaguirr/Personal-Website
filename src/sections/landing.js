@@ -1,5 +1,6 @@
 import React from 'react'
 import Movie from "../images/RiverMe.mov"
+import Movie2 from "../images/meRiver.gif"
 import { saveAs } from 'file-saver';
 
 function Landing() {
@@ -13,8 +14,8 @@ function Landing() {
 
   return (
     <div className='w-full md:mt-24 lg:mt-0 h-full flex flex-col space-y-10 md:flex-row justify-between items-center font-reddit text-[#4B3F3A] dark:text-[#EAE3D2] duration-500 font-bold'>
-      <div className='w-full h-96 mt-20 md:mt-48 md:h-full md:w-[39%] lg:w-1/2 xl:w-1/3 md:ml-12 lg:ml-20 xl:ml-28'>
-        <video src={Movie} autoPlay loop muted className='w-full h-full rounded-lg ' />
+      <div className='w-full h-96 mt-20 md:mt-48 md:h-full lg:w-1/2 md:w-[39%] xl:w-1/3 md:ml-12 lg:ml-20 xl:ml-28'>
+        <img src={Movie2} autoPlay loop muted className='h-full rounded-lg mx-auto' />
       </div>
       <div className='flex flex-end flex-col space-y-8 h-full w-full md:w-full lg:w-3/4 items-center justify-center relative'>          
         <div className='text-3xl sm:text-5xl xl:text-4xl flex flex-row justify-center w-full'>Hello there<span className='animate-wave flex md:px-4 hidden md:flex'>👋 </span>, I'm </div>

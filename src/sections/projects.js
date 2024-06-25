@@ -3,6 +3,8 @@ import { WobbleCard } from '../components/ui/card-wobble'
 import ProjectButton from '../components/project-button'
 
 function Projects() {
+
+    // Defining the links to easily call it
     const links = {
         RoomAutomation : "https://medium.com/@jwaguirre13/automating-my-room-9cdfe53480d7",
         StockFin : "https://medium.com/@jwaguirre13/servery-an-upcoming-app-ca1b05718bbe",
@@ -15,7 +17,7 @@ function Projects() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full font-reddit">
             <WobbleCard
-                containerClassName="col-span-1 lg:col-span-2 h-full bg-[#7A2424] dark:bg-[#642020] duration-500 min-h-[500px] lg:min-h-[300px]"
+                containerClassName="col-span-1 lg:col-span-2 h-full bg-[#7A2424] dark:bg-[#642020] duration-500 min-h-[350px] lg:min-h-[500px] lg:min-h-[300px]"
                 className=""
             >
                 <div className="max-w-xs">
@@ -37,7 +39,7 @@ function Projects() {
                 </p>
                 <ProjectButton size={"px-6 py-3"} link={links.StockFin}/>
             </WobbleCard>
-            <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 dark:bg-[#142743] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+            <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 dark:bg-[#142743] min-h-[400px] lg:min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
                 <div className="max-w-sm">
                 <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Servery (Current)

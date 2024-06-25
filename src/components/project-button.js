@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function ProjectButton({ className, size, text, link }) {
+    // Button for the project section
     return (
         <div className={`absolute bottom-0 p-10 right-0`}>
             <a href={link} target="_blank" rel="noopener noreferrer">

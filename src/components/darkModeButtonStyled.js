@@ -2,10 +2,11 @@ import React, {useContext} from 'react'
 import { DarkModeContext } from '../contexts/darkmode';
 
 function DarkModeButtonStyled() {
+    // Dark mode for large screens
+    // Simply a dark mode button that relys on the context
     const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
 
     const darkModeToggle = () => {
-        console.log("Switching modes")
         toggleDarkMode(!isDarkMode)
     }
     return (
