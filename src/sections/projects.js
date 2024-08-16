@@ -7,7 +7,7 @@ function Projects() {
     // Defining the links to easily call it
     const links = {
         RoomAutomation : "https://medium.com/@jwaguirre13/automating-my-room-9cdfe53480d7",
-        StockFin : "https://medium.com/@jwaguirre13/servery-an-upcoming-app-ca1b05718bbe",
+        StockFin : "https://medium.com/@jwaguirre13/stockfin-a-personalized-ai-friend-e0028b82691e",
         Servery : "https://medium.com/@jwaguirre13/servery-an-upcoming-app-ca1b05718bbe"
     }
     return (
