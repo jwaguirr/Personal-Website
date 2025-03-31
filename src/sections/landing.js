@@ -20,7 +20,7 @@ function Landing() {
         <div className='text-3xl sm:text-5xl xl:text-4xl flex flex-row justify-center w-full'>Hello there<span className='animate-wave flex md:px-4 hidden md:flex'>👋 </span>, I'm </div>
         <span className='text-5xl sm:text-6xl xl:text-8xl text-[#476B6B] dark:text-[#824747] pb-12'>JW Aguirre.</span>
         <div className='flex flex-col flex justify-center items-center'>
-          <div className='font-normal text-xl text-center flex '>Python &#8226; Javascript &#8226; Java &#8226; SQL &#8226; Linux </div>
+          <div className='font-normal text-xl text-center flex '>Python &#8226; Rust &#8226; Java &#8226; SQL &#8226; Linux </div>
           <div onClick={downloadPDF} className='mt-16 flex justify-center bg-[#A8C3BC] dark:bg-[#476B6B] duration-500 hover:scale-105 cursor-pointer rounded-lg w-1/2 p-2'>Download my Resume!</div>
         </div>
       </div>

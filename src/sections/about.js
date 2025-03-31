@@ -58,7 +58,7 @@ function About() {
             <div className='text-5xl font-bold mt-10 md:mt-24 text-center italic text-[#EAE3D2]'>Who's this guy?</div>
             <div className='flex flex-col lg:flex-row space-x-4 mx-auto justify-between items-center w-[95%] h-full mt-16'>
               <h1 className='text-xl w-full lg:w-1/2 md:h-full xl:h-1/2 text-[#EAE3D2] inline justify-center mx-auto items-center p-2 pt-8 lg:p-10 border-t-2 md:border-r-2 border-black' >
-                I am Justin Aguirre, a student at Rice University, Class of 2027 (EOL RRF). I am originally from the bustling city of Barksdale, Texas. All jokes aside, growing up in Barksdale enabled me to independently pursue a field not commonly taught in rural Texas: Computer Science. I am thrilled to be studying Computer Science at Rice University. Please feel free to contact me for anything! <span className='inline font-extrabold text-[#D6CEC0]'>Including deep conversations about my favorite show, The Office.</span>
+                I am Justin Aguirre, a student at Rice University (EOL RRF). I am originally from the bustling city of Barksdale, Texas. All jokes aside, growing up in Barksdale enabled me to independently pursue a field not commonly taught in rural Texas: Computer Science. I am thrilled to be studying Computer Science at Rice University. Please feel free to contact me for anything! <span className='inline font-extrabold text-[#D6CEC0]'>Including deep conversations about my favorite show, The Office.</span>
               </h1>
               <div className='h-1/2 w-1/6 lg:w-1/4 hidden lg:flex'>
                 <img src={RicePres} className='rounded-xl h-full'/>

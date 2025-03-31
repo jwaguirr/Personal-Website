@@ -40,7 +40,7 @@ function Footer() {
                 </div>
                 
                 <h1 className='text-gray-400 text-center'>
-                    jwaguirre.23@gmail.com
+                    jw.aguirre@rice.edu
                 </h1>
             </div>
         </div>

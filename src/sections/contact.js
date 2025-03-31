@@ -46,7 +46,7 @@ const ContactForm = ({setErrorMessage, toggleAlert, setAlertType}) => {
 }
 
   function openEmailClient() {
-    const email = "jwaguirre.23@gmail.com"
+    const email = "jw.aguirre@rice.edu"
     const subject = 'Wow! I really love your website!'
     // Construct the mailto URI
     const mailtoURI = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}`;
@@ -77,7 +77,7 @@ const ContactForm = ({setErrorMessage, toggleAlert, setAlertType}) => {
                         </svg>
                     </div>
                     <a  className="text-[#007bff] text-sm ml-4 flex flex-col">
-                        <strong className="dark:text-[#EAE3D2] cursor-pointer text-[#4B3F3A]" onClick={openEmailClient}>jwaguirre.23@gmail.com</strong>
+                        <strong className="dark:text-[#EAE3D2] cursor-pointer text-[#4B3F3A]" onClick={openEmailClient}>jw.aguirre@rice.edu</strong>
                     </a>
                 </li>
             </ul>
