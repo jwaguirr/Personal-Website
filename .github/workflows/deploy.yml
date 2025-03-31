@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -41,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: https://jwaguirre.xyz
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v3
+        id: deployment
+        uses: actions/deploy-pages@v2
