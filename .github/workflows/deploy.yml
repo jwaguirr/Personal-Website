@@ -2,23 +2,25 @@ name: Github Page Deployment
 
 on:
   push:
-    branches:
-      - main 
+    branches: ['main']
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -26,10 +28,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Build React App
+      - name: Build project
         run: yarn build
 
-      - name: Upload artifact
+      - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./build
@@ -40,9 +42,6 @@ jobs:
     environment:
       name: github-pages
       url: https://jwaguirre.xyz
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
