@@ -1,4 +1,4 @@
-name: Github Page Deployment
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -39,13 +39,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://jwaguirre.xyz
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
